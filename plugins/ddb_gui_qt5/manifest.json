@@ -1,0 +1,15 @@
+{
+    supported_platforms: ['linux','mac','windows'],
+    source: {
+        type: "git",
+        url: "https://github.com/kuba160/ddb_gui_qt5.git",
+        revision: "qmake",
+    },
+    make: {
+        type: "make",
+        root: "/",
+        out: [
+            "ddb_gui_qt5.so"
+        ]
+    }
+}
