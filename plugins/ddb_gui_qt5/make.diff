@@ -10,10 +10,10 @@ index 0000000..36432ba
 \ No newline at end of file
 diff --git a/build_actions.sh b/build_actions.sh
 new file mode 100755
-index 0000000..c83ec89
+index 0000000..ba080e6
 --- /dev/null
 +++ b/build_actions.sh
-@@ -0,0 +1,20 @@
+@@ -0,0 +1,21 @@
 +case "$TRAVIS_OS_NAME" in
 +  osx)
 +	brew install qt@5
@@ -34,3 +34,4 @@ index 0000000..c83ec89
 +"$QMAKE_PREFIX"qmake -o Makefile_qmake
 +make -f Makefile_qmake
 +cp release/ddb_gui_qt5.* . ; true
++cp ddb_gui_qt5.dylib ddb_gui_qt5.so ; true

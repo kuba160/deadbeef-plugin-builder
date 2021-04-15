@@ -112,10 +112,10 @@ if ($os eq 'linux') {
     else {
         print "downloading static-deps...\n";
         mkdir "temp";
-        system ('wget http://sourceforge.net/projects/deadbeef/files/staticdeps/ddb-static-deps-latest.tar.bz2/download -O temp/ddb-static-deps.tar.bz2 && mkdir static-deps && tar jxf temp/ddb-static-deps.tar.bz2 -C static-deps') && die "failed to download static-deps\n";
+        #system ('wget http://sourceforge.net/projects/deadbeef/files/staticdeps/ddb-static-deps-latest.tar.bz2/download -O temp/ddb-static-deps.tar.bz2 && mkdir static-deps && tar jxf temp/ddb-static-deps.tar.bz2 -C static-deps') && die "failed to download static-deps\n";
     }
     print "removing libstdc++ from static-deps...\n";
-    system ('rm static-deps/lib-x86-64/lib/libstdc++*');
+    #system ('rm static-deps/lib-x86-64/lib/libstdc++*');
 
     my $AP="$ORIGIN/tools/apbuild";
     `cd $AP; ./apinit`;
