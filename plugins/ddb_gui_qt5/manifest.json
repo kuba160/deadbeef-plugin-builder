@@ -3,7 +3,10 @@
     source: {
         type: "git",
         url: "https://github.com/kuba160/ddb_gui_qt5.git",
-        revision: "qmake_actions",
+        revision: "qmake",
+        patches: [
+            "make.diff"
+        ],
     },
     make: {
         type: "make",
