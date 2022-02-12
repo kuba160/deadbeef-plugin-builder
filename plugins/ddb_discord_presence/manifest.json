@@ -3,7 +3,7 @@
     source: {
         type: "git",
         url: "https://github.com/kuba160/ddb_discord_presence.git",
-        revision: "1.8",
+        revision: "lastfm",
     },
     make: {
         type: "make",
