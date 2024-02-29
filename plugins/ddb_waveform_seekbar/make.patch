@@ -8,7 +8,7 @@ index a762261..32aa5ad 100644
  CC?=gcc
 -CFLAGS+=-Wall -O2 -g -fPIC -std=c99 -D_GNU_SOURCE
 -LDFLAGS+=-shared
-+CFLAGS+=-Wall -O2 -fPIC -std=c99 -D_GNU_SOURCE -lm
++CFLAGS+=-Wall -O2 -fPIC -std=c99 -D_GNU_SOURCE -DDDB_API_LEVEL=5 -lm
 +LDFLAGS+=-shared -lm
  
  GTK2_DIR?=gtk2
